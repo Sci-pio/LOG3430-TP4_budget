@@ -17,4 +17,4 @@ jobs:
         run : python manage.py test
       - name: Find bug
         run: python myscript.py
-        if: succeededOrFailed()
+        if: failure()
